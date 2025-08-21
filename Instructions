@@ -1,0 +1,23 @@
+I’ll share two different approaches that achieve the same result automatically creating labels so you can choose the one that works best for you.
+1.	Download .xlsx file + download macro from my GitHub.
+2.	Download .xlsm file (already contains macro) 
+
+Download .xlsx file + download macro from my GitHub.	
+
+1.	Download the file sample file auto label.xlsx.
+2.	Download CreateLabels.bas
+3.	Open file.
+4.	Go to tab Developer (if it’s unable https://youtu.be/bizIf264GIk?si=yq8JeSO2qlZKFS0V)
+5.	Click to Visual Basic
+6.	To pop up window left click to “This Workbook” and click import file
+7.	Select the .bas file.
+8.	If you noticed, open a new file Modules.
+9.	Check Module 1 -> left click View Code.
+
+Download .xlsm file
+
+1.	Download the file sample file auto label.xlsm.
+2.	Click Enable Content
+3.	Go to tab Developer (if it’s unable https://youtu.be/bizIf264GIk?si=yq8JeSO2qlZKFS0V)
+4.	Macros
+5.	Run CreateLabels
