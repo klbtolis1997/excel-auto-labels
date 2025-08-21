@@ -44,7 +44,7 @@ Sub CreateLabels()
         newSheet.Name = newSheetName
         On Error GoTo 0
         
-        ' Fill up to 6 labels per page (2×3 grid)
+        ' Fill up to 6 labels per page (2Ã—3 grid)
         For r = 0 To 2
             For c = 0 To 1
                 If dataRow > lastRow Then Exit For   ' stop if no more data
@@ -53,7 +53,7 @@ Sub CreateLabels()
                 Set topLeftCell = newSheet.Range(colOffsets(c) & rowOffsets(r))
                 
                 ' Map fields from "data" into the label
-                topLeftCell.Value = sourceSheet.Cells(dataRow, 2).Value   ' Full Name (col B)
+                topLeftCell.Value = sourceSheet.Cells(dataRow, 2).Value              ' Full Name (col B)
                 topLeftCell.Offset(1, 0).Value = sourceSheet.Cells(dataRow, 3).Value ' Street & Number (col C)
                 topLeftCell.Offset(2, 0).Value = sourceSheet.Cells(dataRow, 5).Value ' Floor (col E)
                 topLeftCell.Offset(3, 0).Value = sourceSheet.Cells(dataRow, 7).Value ' City & Region (col G)
@@ -74,4 +74,5 @@ Sub CreateLabels()
     MsgBox formCount & " labels created across " & (sheetIndex - 1) & " sheets.", vbInformation
 
 End Sub
+
 
